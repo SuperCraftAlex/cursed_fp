@@ -13,7 +13,7 @@ f128 *f128_tmp = &f128_tmp_v;
 
 
 // helper stuff
-f128 *if128_f(f128 imm) {
+static inline f128 *if128_f(f128 imm) {
   *f128_tmp = imm;
   return f128_tmp;
 }
